@@ -1,0 +1,79 @@
+{
+  "name": "@tony2026m/fesod-mcp",
+  "version": "0.1.0",
+  "description": "An MCP (Model Context Protocol) Service for Fesod(Apache Fesod) API query | 一个减少 Fesod 库在Excel操作代码实现时产生幻觉的 MCP 服务，包含系统提示词、API文档、使用描述、代码示例查询",
+  "bin": {
+    "fesod-mcp": "dist/cli.js"
+  },
+  "type": "module",
+  "author": {
+    "name": "tony2026m",
+    "email": "mly7758@163.com",
+    "url": ""
+  },
+  "contributors": [
+    {
+      "name": "tony2026m",
+      "email": "mly7758@163.com",
+      "url": ""
+    }
+  ],
+  "keywords": [
+    "mcp",
+    "fesod",
+    "apache fesod",
+    "model context protocol",
+    "excel",
+    "java"
+  ],
+  "files": [
+    "dist",
+    "componentDocs",
+    "script",
+    "config.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tony2026m/fesod-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tony2026m/fesod-mcp/issues"
+  },
+  "homepage": "https://github.com/tony2026m/fesod-mcp/blob/main/README.md",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/cli.js",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "pretest": "tsup",
+    "test": "tsx test-server.ts",
+    "inspector": "pnpm build & npx @modelcontextprotocol/inspector node dist/cli.js",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "node-cache": "^5.1.2",
+    "to-vfile": "^8.0.0",
+    "vfile-matter": "^5.0.1",
+    "zod": "^3.24.2",
+    "vitepress": "^1.6.4",
+    "vuepress": "^1.9.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "esbuild": "^0.27.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

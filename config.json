@@ -1,0 +1,15 @@
+{
+  "script": {
+    "doc_root": {
+      "fesod": "../.temp/fesod/website/"
+    }
+  },
+  "py": {
+
+  },
+  "js": {
+    "doc_root": {
+      "fesod": "../componentDocs/fesod/"
+    }
+  }
+}
