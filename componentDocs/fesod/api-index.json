@@ -229,13 +229,13 @@
         "description": " | ",
         "whenToUse": " | ",
         "keywords": [
-            "迁移",
-            "apache",
-            "fastexcel",
-            "excel",
-            "upgrade",
             "migration",
             "fesod",
+            "fastexcel",
+            "excel",
+            "apache",
+            "upgrade",
+            "迁移",
             "升级"
         ],
         "module": "migration"
